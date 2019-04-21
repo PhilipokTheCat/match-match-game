@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <title>Match-match game</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="main-header_left-buttons">
+      	<div class="main-header_left-buttons_card-backs" id="cardbacks">
+      		<p class="main-header_buttons-describe">Card backs</p>
+      		<button class="main-header_left-buttons_cardbacks-button clicked"><img src="./images/card-skirts/card-skirt-1.png" class="main-header_left-buttons_cardback"></button>
+      		<button class="main-header_left-buttons_cardbacks-button"><img src="./images/card-skirts/card-skirt-2.png" class="main-header_left-buttons_cardback"></button>
+      		<button class="main-header_left-buttons_cardbacks-button"><img src="./images/card-skirts/card-skirt-3.png" class="main-header_left-buttons_cardback"></button>
+      	</div>
+      	<div class="main-header_left-buttons_difficulty" id="difficulty">
+      		<p class="main-header_buttons-describe">Difficulty</p>
+      		<button class="main-header_left-buttons_difficulty-button clicked">5 x 2</button>
+      		<button class="main-header_left-buttons_difficulty-button">6 x 3</button>
+      		<button class="main-header_left-buttons_difficulty-button">8 x 3</button>
+      	</div>
+      </div>
+      <div class="main-header_timer">
+      	<p class="main-header_describe">Time:</p>
+      	<p class="main-header_time" id="time">0</p>
+      </div>
+      <button class="main-header_start-button" id="start">Start game</button>
+    </header>
+    <main class="main-content">
+      <div class="main-content_gaming-field" id="gameField" >
+        <div class="main-content__description-field" id="descriptionField">
+          <div class="main-content__description">
+            <h2 class="main-content__heading">How to play:</h2>
+            <p class="main-content__text">Memory is a counter game where the object is to find pairs</p>
+            <p class="main-content__text">When the game begins, all pictures are hidden</p>
+            <h2 class="main-content__heading">To play:</h2>
+            <ol> 
+              <li class="main-content__text">Select two cards to try match the pictures.</li> 
+              <li class="main-content__text">If you match the pictures you can go again.</li> 
+              <li class="main-content__text">If they don't match it's the computer turn them.</li> 
+              <li class="main-content__text">The player that find all pairs wins!</li> 
+              <li class="main-content__text">To start the game, please enter your First name, Last name and email.</li> 
+              <li class="main-content__text">Then press the Start game button.</li> 
+              <li class="main-content__text">Have fun :)</li> 
+            </ol> 
+          </div>
+          <h2 class="main-content__heading main-content__form-description">Insert profile data:</h2>
+          <div class="main-content__profile-form">
+            <input type="text" name="Name" class="main-content__input" placeholder="Name">
+            <input type="text" name="Surname" class="main-content__input" placeholder="Surname">
+            <input type="text" name="Email" class="main-content__input" placeholder="E-mail">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
